@@ -9,17 +9,12 @@ source_group(
     FILES ${Source_Files}
 )
 
-set(
-    ALL_FILES
+add_executable(minilua)
+
+target_sources(
+    minilua
+    PRIVATE 
     ${Source_Files}
 )
 
-set(
-    MODULE_NAME
-    minilua
-)
-
-add_executable(
-    ${MODULE_NAME}
-    ${ALL_FILES}
-)
+add_custom_target()
